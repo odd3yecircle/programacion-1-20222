@@ -49,10 +49,10 @@ public class Estrofa {
 		
 		Random random = new Random ();
 		
-		String frase1 = cuadro[random.nextInt(4)][0] + " " + cuadro[random.nextInt(4)][1] + " " + cuadro[random.nextInt(4)][2] + " " + cuadro[random.nextInt(3)][3] + " " + cuadro[random.nextInt(3)][4] + " " + cuadro[random.nextInt(3)][5];
-		String frase2 = cuadro[random.nextInt(4)][0] + " " + cuadro[random.nextInt(4)][1] + " " + cuadro[random.nextInt(4)][2] + " " + cuadro[random.nextInt(3)][3] + " " + cuadro[random.nextInt(3)][4] + " " + cuadro[random.nextInt(3)][5];
-		String frase3 = cuadro[random.nextInt(4)][0] + " " + cuadro[random.nextInt(4)][1] + " " + cuadro[random.nextInt(4)][2] + " " + cuadro[random.nextInt(3)][3] + " " + cuadro[random.nextInt(3)][4] + " " + cuadro[random.nextInt(3)][5];
-		String frase4 = cuadro[random.nextInt(4)][0] + " " + cuadro[random.nextInt(4)][1] + " " + cuadro[random.nextInt(4)][2] + " " + cuadro[random.nextInt(3)][3] + " " + cuadro[random.nextInt(3)][4] + " " + cuadro[random.nextInt(3)][5];
+		String frase1 = cuadro[random.nextInt(4)][0] + " " + cuadro[random.nextInt(4)][1] + " " + cuadro[random.nextInt(4)][2] + " " + cuadro[random.nextInt(4)][3] + " " + cuadro[random.nextInt(4)][4] + " " + cuadro[random.nextInt(4)][5];
+		String frase2 = cuadro[random.nextInt(4)][0] + " " + cuadro[random.nextInt(4)][1] + " " + cuadro[random.nextInt(4)][2] + " " + cuadro[random.nextInt(4)][3] + " " + cuadro[random.nextInt(4)][4] + " " + cuadro[random.nextInt(4)][5];
+		String frase3 = cuadro[random.nextInt(4)][0] + " " + cuadro[random.nextInt(4)][1] + " " + cuadro[random.nextInt(4)][2] + " " + cuadro[random.nextInt(4)][3] + " " + cuadro[random.nextInt(4)][4] + " " + cuadro[random.nextInt(4)][5];
+		String frase4 = cuadro[random.nextInt(4)][0] + " " + cuadro[random.nextInt(4)][1] + " " + cuadro[random.nextInt(4)][2] + " " + cuadro[random.nextInt(4)][3] + " " + cuadro[random.nextInt(4)][4] + " " + cuadro[random.nextInt(4)][5];
 		
 		est = frase1 + "\n" + frase2 + "\n" + frase3 + "\n" + frase4 + "\n";
 	
