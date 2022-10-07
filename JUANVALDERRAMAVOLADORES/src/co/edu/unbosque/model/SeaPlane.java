@@ -37,6 +37,12 @@ public class SeaPlane extends Airplane {
 		// TODO Auto-generated method stub
 		return "Cartagena";
 	}
+
+	@Override
+	public String getWheels() {
+		// TODO Auto-generated method stub
+		return this.wheels;
+	}
 	
 	
 

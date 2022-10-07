@@ -2,6 +2,10 @@ package co.edu.unbosque.model;
 
 public class Helicopter extends Airplane{
 	
+	public Helicopter() {
+		this.wheels = "de caucho";
+	}
+	
 	@Override
 	public String takeoff() {
 		// TODO Auto-generated method stub
@@ -32,6 +36,12 @@ public class Helicopter extends Airplane{
 	public String goingTo() {
 		// TODO Auto-generated method stub
 		return "Torre Colpatria";
+	}
+
+	@Override
+	public String getWheels() {
+		// TODO Auto-generated method stub
+		return this.getWheels();
 	}
 
 }
