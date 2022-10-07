@@ -2,8 +2,11 @@ package co.edu.unbosque.model;
 
 public class Helicopter extends Airplane{
 	
+	private int blades;
+	
 	public Helicopter() {
 		this.wheels = "de caucho";
+		this.blades = 4;
 	}
 	
 	@Override
@@ -41,7 +44,11 @@ public class Helicopter extends Airplane{
 	@Override
 	public String getWheels() {
 		// TODO Auto-generated method stub
-		return this.getWheels();
+		return this.wheels;
+	}
+	
+	public int getBlades() {
+		return this.blades;
 	}
 
 }

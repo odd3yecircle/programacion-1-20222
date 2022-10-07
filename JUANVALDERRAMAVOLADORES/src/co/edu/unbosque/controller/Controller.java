@@ -30,13 +30,15 @@ public class Controller {
 				         "Despego desde: " + si.getSp().takeoff() + "\n" +
 				         "Vuelo en: " + si.getSp().fly() + "\n" +
 				         "Aterrizo en: " + si.getSp().land() + " " + si.getSp().goingTo() + "\n" + "\n" +
-				         "Tengo capacidad para " + si.getSp().calculateEmptySeats() + " personas más", "Hidroavion");
+				         "Tengo capacidad para " + si.getSp().calculateEmptySeats() + " personas más" + "\n" +
+				         "Utilizo " + si.getSp().getFloaters() + " como flotadores", "Hidroavion");
 		
 		v.mostrarMensaje("Soy un helicoptero \n" +
 				 		 "Despego desde: " + si.getH().takeoff() + "\n" +
 			 		 	 "Vuelo en: " + si.getH().fly() + "\n" +
 			 		 	 "Aterrizo en: " + si.getH().land() + " " + si.getH().goingTo() + "\n" + "\n" +
-			 		 	 "Tengo capacidad para " + si.getH().calculateEmptySeats() + " personas más", "Helicoptero");
+			 		 	 "Tengo capacidad para " + si.getH().calculateEmptySeats() + " personas más" + "\n" +
+			 		 	 "Tengo " + si.getH().getBlades() + " aspas", "Helicoptero");
 		
 		v.mostrarMensaje("Soy Superman \n" +
 						 "Despego desde: " + si.getSm().takeoff() + "\n" +

@@ -2,8 +2,11 @@ package co.edu.unbosque.model;
 
 public class SeaPlane extends Airplane {
 	
+	private String floaters;
+	
 	public SeaPlane() {
 		this.wheels = "No tiene";
+		this.floaters = "canoas";
 	}
 
 	@Override
@@ -42,6 +45,10 @@ public class SeaPlane extends Airplane {
 	public String getWheels() {
 		// TODO Auto-generated method stub
 		return this.wheels;
+	}
+	
+	public String getFloaters() {
+		return this.floaters;
 	}
 	
 	
