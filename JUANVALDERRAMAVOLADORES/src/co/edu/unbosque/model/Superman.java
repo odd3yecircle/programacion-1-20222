@@ -7,6 +7,7 @@ public class Superman extends Kryptonian {
 	public Superman() {
 		this.radioactivity = 129;
 		this.planetorigin = "Krypton";
+		this.fictional = true;
 	}
 
 	@Override
@@ -50,6 +51,12 @@ public class Superman extends Kryptonian {
 	public String getPlanetorigin() {
 		return this.planetorigin;
 	}
+	
+	@Override
+	public boolean isFictional() {
+		return this.fictional;
+	}
+
 	
 	
 	

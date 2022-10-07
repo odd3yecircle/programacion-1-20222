@@ -45,6 +45,7 @@ public class Bird extends Animal {
 		return favouritefood;
 	}
 	
+	@Override
 	public boolean isFictional() {
 		return this.fictional;
 	}

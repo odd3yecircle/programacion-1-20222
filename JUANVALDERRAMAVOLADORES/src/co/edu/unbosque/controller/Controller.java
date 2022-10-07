@@ -46,6 +46,10 @@ public class Controller {
 						 "Vengo de: " + si.getSm().getPlanetorigin() + "\n" +
 						 "*le disparan* *lo evade* " + si.getSm().stopBullet() + "\n" +
 						 "Tengo " + si.getSm().getRadioactivity() + " niveles de radioactividad, y consumo " + si.getSm().eat(), "Superman");
+		
+		if (si.getSm().isFictional() == true) {
+			v.mostrarMensaje("Pdt: Soy un animal ficticio", "Superman");
+		}
 
 		
 	}
