@@ -2,7 +2,7 @@ package co.edu.unbosque.model;
 
 public class Juego {
 	
-	Simon s;
+	private Simon s;
 	
 	public Juego () {
 		s = new Simon ();

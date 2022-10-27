@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class Simon {
 	
-	int [] simondice;
+	private int [] simondice;
 	
 	public Simon() {
 		simondice = new int [4];
