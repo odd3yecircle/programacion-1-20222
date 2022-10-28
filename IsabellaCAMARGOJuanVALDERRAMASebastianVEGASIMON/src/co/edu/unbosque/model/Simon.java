@@ -5,9 +5,11 @@ import java.util.Random;
 public class Simon {
 	
 	private int [] simondice;
+	private int [] jugadordice;
 	
 	public Simon() {
 		simondice = new int [4];
+		jugadordice = new int [4];
 	}
 
 	public int[] getSimondice() {
@@ -31,12 +33,12 @@ public class Simon {
 	
 	}
 	
-	public boolean compararNumeros (int [] jugador) {
+	public boolean compararNumeros () {
 		
 		int i = 0;
 		boolean romper = false;
 		while (i < 4 && romper == false) {
-			if (simondice [i] == jugador [i]) {
+			if (simondice [i] == jugadordice [i]) {
 				romper = false;
 				i++;
 			} else {
