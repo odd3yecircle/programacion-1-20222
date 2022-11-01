@@ -1,55 +1,54 @@
 package co.edu.unbosque.model;
 
 import java.util.Random;
+import java.util.Timer;
 
 public class Simon {
 	
-	private int [] simondice;
-	private int [] jugadordice;
+	private String simondice;
+	private String jugadordice;
+
 	
 	public Simon() {
-		simondice = new int [4];
-		jugadordice = new int [4];
+		simondice = "";
+		jugadordice = "";
+
 	}
 
-	public int[] getSimondice() {
+	public String getSimondice() {
 		return simondice;
 	}
 
+	public void setSimondice(String simondice) {
+		this.simondice = simondice;
+	}
+
+	public String getJugadordice() {
+		return jugadordice;
+	}
+	
 	public void generarCodigo () {
-		
+	
 		Random r = new Random();
 		
-		simondice [0] = r.nextInt(5);
-		simondice [1] = r.nextInt(5);
-		simondice [2] = r.nextInt(5);
-		simondice [3] = r.nextInt(5);
-		
-		for (int i = 0; i < simondice.length; i++) {
-			if (simondice[i] == 0) {
-				simondice [i] = r.nextInt(5);
-			}
+		while (simondice.length() < 4) {
+			simondice += "" + (r.nextInt(4) + 1) ;
 		}
+		
+	}
 	
+	public void guardarResultado(String ingreso) {
+		jugadordice += ingreso;
 	}
 	
 	public boolean compararNumeros () {
-		
-		int i = 0;
-		boolean romper = false;
-		while (i < 4 && romper == false) {
-			if (simondice [i] == jugadordice [i]) {
-				romper = false;
-				i++;
-			} else {
-				romper = true;
-			}
+		if (simondice.equals(jugadordice) == false) {
+			return false;
 		}
-		
-		return romper;
+		else {
+			return true;
+		}
 	}
-	
-	
 	
 	
 

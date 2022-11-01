@@ -28,11 +28,11 @@ public class PanelNumeros extends JPanel{
 	}
 
 	
-	public void mostrarNumeros (int [] numeros) {
-		numgen1.setText("" + numeros [0]);
-		numgen2.setText("" + numeros [1]);
-		numgen3.setText("" + numeros [2]);
-		numgen4.setText("" + numeros [3]);
+	public void mostrarNumeros (String numeros) {
+		numgen1.setText("" + numeros.charAt(0));
+		numgen2.setText("" + numeros.charAt(1));
+		numgen3.setText("" + numeros.charAt(2));
+		numgen4.setText("" + numeros.charAt(3));
 		
 	}
 

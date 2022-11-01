@@ -14,13 +14,14 @@ public class View extends JFrame {
 	private PanelEntrada pE;
 	private PanelNumeros pN;
 	private JButton terminar;
+	private static final String TERMINAR = "terminar";
 	
 	
 	
 	public View (Controller cont) {
 		
 		Random r = new Random();
-		setSize(500, 400);
+		setSize(500, 300);
 		setResizable(false);
 		setTitle("Simon");
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -29,6 +30,7 @@ public class View extends JFrame {
 		pE = new PanelEntrada();
 		pN = new PanelNumeros();
 		terminar = new JButton ("Terminar");
+		terminar.setActionCommand(TERMINAR);
 		add(pN, BorderLayout.NORTH);
 		add(pE, BorderLayout.CENTER);
 		add(terminar, BorderLayout.SOUTH);
@@ -58,17 +60,19 @@ public class View extends JFrame {
 	public void setpN(PanelNumeros pN) {
 		this.pN = pN;
 	}
-	
-	public void mostrarResultado(boolean roto) {
-		if (roto == true) {
-			JOptionPane.showMessageDialog(this, "Fallaste");
-		} else {
-			JOptionPane.showMessageDialog(this, "Felecitaciones");
-		}
+
+	public static String getTerminar() {
+		return TERMINAR;
+	}
+
+
+	public void mostrarCorrecto () {
+		JOptionPane.showMessageDialog(this, "¡Felicitaciones!");
 	}
 	
+	public void mostrarIncorrecto() {
+		JOptionPane.showMessageDialog(this, "¡Fallaste!");
+	}
+	
+	}
 
-	
-	
-	
-}
