@@ -18,15 +18,23 @@ public class PanelEntrada extends JPanel {
 	public static final String CUATRO = "4";
 	
 	public PanelEntrada() {
-		setLayout(new GridLayout(2, 2));
+		setLayout(new GridLayout(2, 2, 25 , 25));
 		uno = new JButton("1");
 		uno.setActionCommand(UNO);
+		uno.setBackground(new Color(250, 225, 135));
+		uno.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 35));
 		dos = new JButton("2");
 		dos.setActionCommand(DOS);
+		dos.setBackground(new Color(187, 206, 246));
+		dos.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 35));
 		tres = new JButton ("3");
 		tres.setActionCommand(TRES);
+		tres.setBackground(new Color(160, 217, 149));
+		tres.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 35));
 		cuatro = new JButton ("4");
 		cuatro.setActionCommand(CUATRO);
+		cuatro.setBackground(new Color(255, 18, 184));
+		cuatro.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 35));
 		add(uno);
 		add(dos);
 		add(tres);

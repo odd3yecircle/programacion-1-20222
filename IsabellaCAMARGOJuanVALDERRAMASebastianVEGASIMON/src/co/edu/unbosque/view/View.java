@@ -2,10 +2,11 @@ package co.edu.unbosque.view;
 
 import javax.swing.*;
 
+import javax.swing.border.EmptyBorder;
+
 import co.edu.unbosque.controller.Controller;
 
 import java.awt.*;
-import java.util.Random;
 
 public class View extends JFrame {
 
@@ -30,8 +31,14 @@ public class View extends JFrame {
 		pE = new PanelEntrada();
 		pN = new PanelNumeros();
 		t = new Timer(1000, cont);
+		pE.setBorder(new EmptyBorder(10, 10, 10, 10));
+		pN.setBorder(new EmptyBorder(10, 10, 10, 10));
+		pN.setBackground(Color.LIGHT_GRAY);
+		pE.setBackground(new Color(84, 84, 84));
 		terminar = new JButton ("Terminar");
 		terminar.setActionCommand(TERMINAR);
+		terminar.setBackground(Color.LIGHT_GRAY);
+		terminar.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 20));
 		add(pN, BorderLayout.NORTH);
 		add(pE, BorderLayout.CENTER);
 		add(terminar, BorderLayout.SOUTH);
@@ -40,6 +47,7 @@ public class View extends JFrame {
 		pE.getTres().addActionListener(cont);
 		pE.getCuatro().addActionListener(cont);
 		terminar.addActionListener(cont);
+	
 	}
 
 

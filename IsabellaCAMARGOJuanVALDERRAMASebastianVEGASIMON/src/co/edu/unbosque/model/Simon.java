@@ -26,6 +26,10 @@ public class Simon {
 		return jugadordice;
 	}
 	
+	public void setJugadordice(String jugadordice) {
+		this.jugadordice = jugadordice;
+	}
+
 	public void generarCodigo () {
 	
 		Random r = new Random();

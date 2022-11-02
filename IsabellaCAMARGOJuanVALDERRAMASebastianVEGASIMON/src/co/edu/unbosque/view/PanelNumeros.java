@@ -20,6 +20,11 @@ public class PanelNumeros extends JPanel{
 		numgen2 = new JLabel ("");
 		numgen3 = new JLabel ("");
 		numgen4 = new JLabel ("");
+		num.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 15));
+		numgen1.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 35));
+		numgen2.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 35));
+		numgen3.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 35));
+		numgen4.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 35));
 		add(num);
 		add(numgen1);
 		add(numgen2);

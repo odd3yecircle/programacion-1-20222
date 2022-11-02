@@ -17,8 +17,9 @@ public class Controller implements ActionListener {
 		gui = new View (this);
 		j = new Juego();
 		gui.setVisible(true);
+		gui.getpE().setVisible(false);
 		t = new Timer();
-		t.schedule(new Temporizador(), 5000);
+		t.schedule(new Temporizador(), 2500);
 		cambiarNumeros();
 	}
 
@@ -40,16 +41,10 @@ public class Controller implements ActionListener {
 		if (e.getActionCommand().equals(gui.getTerminar())) {
 			if (j.getS().compararNumeros() == false) {
 				gui.mostrarIncorrecto();
-				j.getS().setSimondice("");
 				cambiarNumeros();
-				t.schedule(new Temporizador(), 5000);
-				gui.getpN().setVisible(true);
 			} else {
 				gui.mostrarCorrecto();
-				j.getS().setSimondice("");
 				cambiarNumeros();
-				t.schedule(new Temporizador(), 5000);
-				gui.getpN().setVisible(true);
 			}
 		}
 	
@@ -59,13 +54,20 @@ public class Controller implements ActionListener {
 	class Temporizador extends TimerTask {
 		public void run() {
 			gui.getpN().setVisible(false);
+			gui.getpE().setVisible(true);
+			
 		}
 		
 	}
 	
 	public void cambiarNumeros() {
+		j.getS().setSimondice("");
+		j.getS().setJugadordice("");
 		j.getS().generarCodigo();
 		gui.getpN().mostrarNumeros(j.getS().getSimondice());
+		t.schedule(new Temporizador(), 2500);
+		gui.getpN().setVisible(true);
+		gui.getpE().setVisible(false);
 	}
 }
 
