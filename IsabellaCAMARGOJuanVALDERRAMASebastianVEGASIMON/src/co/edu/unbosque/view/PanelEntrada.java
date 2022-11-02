@@ -12,6 +12,7 @@ public class PanelEntrada extends JPanel {
 	private JButton dos;
 	private JButton tres;
 	private JButton cuatro;
+	private Font fuente;
 	public static final String UNO = "1";
 	public static final String DOS = "2";
 	public static final String TRES = "3";
@@ -19,22 +20,23 @@ public class PanelEntrada extends JPanel {
 	
 	public PanelEntrada() {
 		setLayout(new GridLayout(2, 2, 25 , 25));
+		fuente = new Font("Lucida Sans Unicode", Font.PLAIN, 35);
 		uno = new JButton("1");
 		uno.setActionCommand(UNO);
 		uno.setBackground(new Color(250, 225, 135));
-		uno.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 35));
+		uno.setFont(fuente);
 		dos = new JButton("2");
 		dos.setActionCommand(DOS);
 		dos.setBackground(new Color(93, 173, 226));
-		dos.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 35));
+		dos.setFont(fuente);
 		tres = new JButton ("3");
 		tres.setActionCommand(TRES);
 		tres.setBackground(new Color(160, 217, 149));
-		tres.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 35));
+		tres.setFont(fuente);
 		cuatro = new JButton ("4");
 		cuatro.setActionCommand(CUATRO);
 		cuatro.setBackground(new Color(255, 18, 184));
-		cuatro.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 35));
+		cuatro.setFont(fuente);
 		add(uno);
 		add(dos);
 		add(tres);

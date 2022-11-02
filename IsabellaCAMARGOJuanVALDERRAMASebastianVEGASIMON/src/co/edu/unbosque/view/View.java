@@ -76,11 +76,16 @@ public class View extends JFrame {
 
 
 	public void mostrarCorrecto () {
-		JOptionPane.showMessageDialog(this, "¡Felicitaciones!");
+		JLabel correcto = new JLabel("¡Secuencia exitosa!");
+		correcto.setFont(new Font("Lucida Sans Unicode", Font.BOLD, 18));
+		correcto.setForeground(new Color(255, 109, 184));
+		JOptionPane.showMessageDialog(this, correcto, "¡Bien!", JOptionPane.INFORMATION_MESSAGE);
 	}
 	
 	public void mostrarIncorrecto() {
-		JOptionPane.showMessageDialog(this, "¡Fallaste!");
+		JLabel incorrecto = new JLabel("¡Fallaste!");
+		incorrecto.setFont(new Font("Lucida Sans Unicode", Font.BOLD, 18));
+		JOptionPane.showMessageDialog(this, incorrecto, "¡Para la próxima!", JOptionPane.ERROR_MESSAGE);
 	}
 	
 	

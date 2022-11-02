@@ -12,19 +12,21 @@ public class PanelNumeros extends JPanel{
 	private JLabel numgen2;
 	private JLabel numgen3;
 	private JLabel numgen4;
+	private Font fuente;
 	
 	public PanelNumeros() {
 		setLayout(new GridLayout(1,5));
+		fuente = new Font("Lucida Sans Unicode", Font.PLAIN, 35);
 		num = new JLabel ("Numeros");
 		numgen1 = new JLabel ("");
 		numgen2 = new JLabel ("");
 		numgen3 = new JLabel ("");
 		numgen4 = new JLabel ("");
 		num.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 15));
-		numgen1.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 35));
-		numgen2.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 35));
-		numgen3.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 35));
-		numgen4.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 35));
+		numgen1.setFont(fuente);
+		numgen2.setFont(fuente);
+		numgen3.setFont(fuente);
+		numgen4.setFont(fuente);
 		add(num);
 		add(numgen1);
 		add(numgen2);
