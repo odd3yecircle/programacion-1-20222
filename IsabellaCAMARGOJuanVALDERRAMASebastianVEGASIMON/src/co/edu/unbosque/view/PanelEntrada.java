@@ -25,7 +25,7 @@ public class PanelEntrada extends JPanel {
 		uno.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 35));
 		dos = new JButton("2");
 		dos.setActionCommand(DOS);
-		dos.setBackground(new Color(187, 206, 246));
+		dos.setBackground(new Color(93, 173, 226));
 		dos.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 35));
 		tres = new JButton ("3");
 		tres.setActionCommand(TRES);
