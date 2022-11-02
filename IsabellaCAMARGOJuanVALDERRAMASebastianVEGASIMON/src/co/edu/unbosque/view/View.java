@@ -14,13 +14,13 @@ public class View extends JFrame {
 	private PanelEntrada pE;
 	private PanelNumeros pN;
 	private JButton terminar;
+	private Timer t;
 	private static final String TERMINAR = "terminar";
 	
 	
 	
 	public View (Controller cont) {
 		
-		Random r = new Random();
 		setSize(500, 300);
 		setResizable(false);
 		setTitle("Simon");
@@ -29,6 +29,7 @@ public class View extends JFrame {
 		setLayout(new BorderLayout());
 		pE = new PanelEntrada();
 		pN = new PanelNumeros();
+		t = new Timer(1000, cont);
 		terminar = new JButton ("Terminar");
 		terminar.setActionCommand(TERMINAR);
 		add(pN, BorderLayout.NORTH);
@@ -74,5 +75,6 @@ public class View extends JFrame {
 		JOptionPane.showMessageDialog(this, "¡Fallaste!");
 	}
 	
-	}
+	
+}
 
