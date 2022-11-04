@@ -15,7 +15,6 @@ public class View extends JFrame {
 	private PanelEntrada pE;
 	private PanelNumeros pN;
 	private JButton terminar;
-	private Timer t;
 	private static final String TERMINAR = "terminar";
 	
 	
@@ -30,7 +29,6 @@ public class View extends JFrame {
 		setLayout(new BorderLayout());
 		pE = new PanelEntrada();
 		pN = new PanelNumeros();
-		t = new Timer(1000, cont);
 		pE.setBorder(new EmptyBorder(10, 10, 10, 10));
 		pN.setBorder(new EmptyBorder(10, 10, 10, 10));
 		pN.setBackground(Color.LIGHT_GRAY);
